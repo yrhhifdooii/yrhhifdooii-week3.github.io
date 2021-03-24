@@ -1,0 +1,197 @@
+
+
+.content{
+		display:flex ; 
+		justify-content:space-between;		
+		align-items:center;
+			width :100%;
+			height:50px;
+			position:relative;
+			transition: all ls;
+			
+			/*border-style:solid;  框的粗細
+			  border-bottom-width:5px;  框著樣式
+			  border-color:red;  框的顏色*/
+			}
+	.leftname{
+			  line-height:50px;
+			  margin-right:20px;
+			  /*float:left;
+			  /*border-color:green;  框的顏色
+			  /*border-style:solid;     框著樣式
+			    border-bottom-width:5px;  框的粗細*/
+
+			 }
+	/*.rightmenu > div{
+					line-height:50px;
+					float:right;
+					width:70px;
+					text-align:center;
+					border-color:green;
+					border-style:solid;
+					border-bottom-width:5px;
+
+					}*/
+					
+	.rightmenu{
+		margin-right:20px;
+	}
+	.rightmenu > ul{
+					line-height:50px;
+					/*float:right;*/
+					}
+	.rightmenu > ul >li{
+					display: inline-block;
+					margin-left:25px;
+					}
+	*{
+		list-style:none;
+		padding:0;
+		margin:0;
+		font-size:15px;
+
+	}
+	a{
+		text-decoration:none;   /*a標籤  不要顯示底線*/
+	}
+
+	/*pt*/
+
+	.pt{
+		clear:both;
+		width:100%;
+		height:300px;
+		background-color:lightskyblue;
+	}
+	.pt > .item{
+		height:300px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+
+	}
+	.pt > .item >h1{
+		font-size:3em;
+		color:darkblue;
+		text-align:center;
+	}
+	
+	/*box*/
+	
+	.box{
+		margin-top:20px;
+		width:100%;
+		display:flex;
+		justify-content:center;
+	}
+	.boxin{
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+		max-width:1200px;
+	}
+	.boxitem{
+		width:23%;
+		margin-left:2%;
+		text-align:center;
+		font-size:0px;
+		margin-top:10px;
+	}
+.boxitem > img{
+    width:100%;
+	height:150px;
+    
+}
+
+
+
+.boxitem > h1{
+    color:darkblue;
+    background-color: lightblue;
+	height:13%;
+}
+
+
+
+.btn{
+	width:100%;
+	height:80%;
+	display:flex;
+	justify-content:center;
+	margin-top : 20px;  /*設定離上面的標籤多少間距*/
+	
+}
+.btn > button{
+	font-size: 20px;
+	border-radius: 8px;
+	border: 2px solid #f44336 ;  /*框框的大小顏色*/
+	transition-duration: 0.4s;
+	
+	
+}
+.btn > button:hover{
+	background-color: #f44336; /* 紅色 */
+	color: white;
+	
+}
+	/*burgar_btn*/
+
+.burgar_btn {			
+		display:none; 
+		
+	}
+.burgar{			
+		
+		padding-right:10px; /*讓我的burgar內的圖片 不要太靠近右邊的邊界  不放在content內 是因為會影響PT的部分 放在這邊比較適當*/
+	}
+
+
+
+	@media (min-width:601px) and (max-width:1200px){
+		.boxitem{
+			width:40%;
+			margin-left:5%
+		}
+		
+	}
+	@media screen and (max-width:600px){
+		.boxitem{
+			width:90%;
+		}
+	}
+	@media screen and (max-width: 600px){
+    
+    /*.content{
+        overflow: hidden;
+    }
+    .content.open{
+        overflow: visible;
+    }
+    .rightmenu > ul{
+        width: 100%;
+        line-height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
+	.rightmenu{
+		display:none;
+	}
+
+    
+	.burgar_btn {			
+		display:block;			
+	}
+	.burgar{
+		display: flex;
+		justify-content: flex-end;
+		align-items:center;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
